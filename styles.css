@@ -2,6 +2,10 @@
 CSS RESET
 */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,17 +71,114 @@ button {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 56px;
+    font-weight: 900;
+    color: #F9FAF8;
+    padding-bottom: 10px;
+}
+
+.header-logo {
+    font-size: 26px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
-.header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
+.header-links, .info-paragraph, .info-subtext{
+    font-size: 20px;
+    color: #E5E7EB;
 }
 
-.header-links, .info-paragraph, .info-subtext{
-    font-size: 18px;
+button {
+    background-color: #3882F6;
     color: #E5E7EB;
+    font-size: 18px;
+}
+
+/*
+UNIVERSAL STYLES
+*/
+
+button {
+    margin: 15px 0;
+    padding: 8px 36px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/*
+Header styles
+*/
+header {
+    height: 500px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header-links{
+    display: flex;
+}
+
+.header-links p {
+    margin: 0 10px;
+}
+
+.header-logo, .header-links {
+    padding: 0 20px;
+}
+
+.header-links p:hover {
+    text-decoration: underline;
+}
+
+/*
+Header Intro styles
+*/
+
+.intro-container {
+    display: flex;
+    height: 350px;
+}
+
+.intro {
+    margin: 0 auto;
+    width: 60%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 100%
+}
+
+.image-wrapper {
+    width: 48%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.intro-info {
+    width: 48%;
+    margin: 0 auto;
+}
+
+.image-wrapper, .intro-info {
+    padding: 0 20px;
+}
+
+.intro-button {
+
+}
+
+
+main {
+    width: 60%;
+    margin: 0 auto;
 }
